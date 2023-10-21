@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: black;
+}
+
+/* Navigation Starts  */
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.container-link ul {
+    list-style: none;
+    display: flex;
+    margin-right: 80px;
+}
+.container-link ul .link_one, .container-link ul .link_three, .container-link ul .link_four, .container-link ul .link_two {
+    position: relative;
+}
+.container-link ul .link_one::after, .container-link ul .link_one::before, .container-link ul .link_three::after, .container-link ul .link_three::before, .container-link ul .link_four::after, .container-link ul .link_four::before,
+.container-link ul .link_two::after,
+.container-link ul .link_two::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: solid 1px transparent;
+}
+.container-link ul .link_one::after, .container-link ul .link_three::after, .container-link ul .link_four::after,
+.container-link ul .link_two::after {
+    left: 0px;
+    bottom: 0px;
+}
+.container-link ul .link_one::before, .container-link ul .link_three::before, .container-link ul .link_four::before,
+.container-link ul .link_two::before {
+    right: -2px;
+    top: -2px;
+}
+.container-link ul .link_one:hover::after, .container-link ul .link_three:hover::after, .container-link ul .link_four:hover:after,
+.container-link ul .link_two:hover:after {
+    transition: width 0.25s 0.25s, height 0.25s,border-top-color 0.25s 0.25s, border-left-color 0.25s;
+    width: 100%;
+    height: 100%;
+    border-left-color: white;
+    border-top-color: white;
+}
+.container-link ul .link_one:hover::before, .container-link ul .link_three:hover::before, .container-link ul .link_four:hover::before,
+.container-link ul .link_two:hover:before {
+    transition: width 0.25s 0.25s, height 0.25s,border-bottom-color 0.25s 0.25s, border-right-color 0.25s;
+    width: 100%;
+    height: 100%;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+.container-link ul a {
+    margin-left: 50px;
+    margin-top: -10px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+}
+.container-nav img {
+    margin-left: 150px;
+    margin-top: -20px;
+}
+.container-nav .name {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 165px;
+    top: 17px;
+    font-style: italic;
+    font-weight: bold;
+}
+.container-icon {
+    margin-right: 200px;
+    font-size: 25px;
+    position: relative;
+}
+.container-icon i {
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+.container-icon i:hover {
+    opacity: 0.5;
+    transition: 0.8s;
+}
+.container-icon .number {
+    position: absolute;
+    left: 450px;
+    top: 0px;
+    background-color: #fca311;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+.container-icon .user {
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.container-link .products {
+    position: absolute;
+    left: 400px;
+    top: 80px;
+    width: 430px;
+    height: 200px;
+    border: solid 1px white;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    transform: scale(0,0);
+}
+.container-link .products .table {
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.container-link .products .table .one {
+    border-bottom: dotted white 1px;
+    width: 45px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.container-link .products .table .three,
+.container-link .products .table .four {
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.container-link .products .table .two,
+.container-link .products .table .five {
+    cursor: pointer;
+}
+.container-link .link_two:hover + .products, .products:hover {
+    visibility: visible;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.container-link ul a:hover,
+.container-link .products .table p:hover {
+    text-shadow: 0 0 1px white;
+}
+.bag {
+    color: white;
+}
+
+/* Navigation Ends  */
+
+
+/* First Page Starts  */
+.container-page {
+    height: 100vh;
+}
+.container-page .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+.container-page .content .content-word p {
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 50px 0px;
+}
+.container-page .content .content-word .one {
+    font-size: 20px;
+    color: #fca311;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+}
+.container-page .content .content-word button {
+    background-color: #fca311;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.container-page .content .content-word button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+/* First Page Ends  */
+
+
+/* Section One  */
+
+/* First Part  */
+.one .content .title,
+.two .content .title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+.one .content .title::after,
+.two .content .title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: #fca311;
+    transition: 0.5s;
+}
+.one .content .title::before,
+.two .content .title::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: #fca311;
+    transition: 0.5s;
+}
+.one .content .title:hover::after,
+.one .content .title:hover::before,
+.two .content .title:hover::after,
+.two .content .title:hover::before {
+    width: 70px;
+}
+.one .content .category {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.category .info {
+    margin-top: 30px;
+    position: relative;
+}
+.category .info p {
+    color: #bebdbd;
+}
+.category .info .two {
+    color: white;
+    font-weight: bold;
+    margin: 5px 0px 0px 0px;
+}
+.category .info i {
+    color: white;
+    background-color: #fca311;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: -70px;
+    bottom: 0px;
+    visibility: hidden;
+}
+.category .type_one:hover i {
+    visibility: visible;
+}
+/* End of First Part  */
+
+/* Second Part  */
+.category_two {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category_two .discount {
+    height: 300px;
+    width: 20%;
+    padding: 20px;
+    transition: 0.5s;
+}
+.category_two .one {
+    margin: 0px 2%;
+    background-image: url(../Images/nike-tying-shoe-1661882021.jpg);
+    background-size: cover;
+}
+.category_two .one p:first-child,
+.category_two .two p:first-child {
+    color: #fca311;
+    font-size: 25px;
+}
+.category_two .one p:last-child,
+.category_two .two p:last-child {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.category_two .two {
+    margin-right: 100px;
+    background-image: url(../Images/f55bf732-7fa9-4b38-8464-3332d97f879a.webp);
+    background-size: cover;
+}
+.category_two .discount:hover {
+    transform: scale(1.1, 1.1);
+}
+.category_two .marketing {
+    background-color: #1e1e1e;
+    width: 40%;
+    margin-left: 90px;
+    flex-grow: 1;
+    padding: 20px;
+    color: white;
+    height: 300px;
+}
+.category_two .marketing i {
+    color: #fca311;
+    font-size: 30px;
+}
+.category_two .marketing span {
+    font-weight: bold;
+    font-size: 25px;
+}
+.category_two .marketing p:first-of-type {
+    margin: 0px 0px 40px 60px;
+    color: #bebdbd;
+}
+.category_two .marketing p:last-of-type {
+    line-height: 25px;
+    color: #bebdbd;
+}
+.category_two .marketing .lines {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+.category_two .marketing .lines p {
+    width: 60px;
+    height: 2px;
+    background-color: #fca311;
+}
+.category_two .marketing .lines p:nth-child(2) {
+    margin: 0px 10px;
+}
+/* End of Second Part  */
+
+
+/* Third Part  */
+.category_three .container {
+    margin: 50px;
+    margin-top: 80px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.container .part_one {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+.container .part_one::after {
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #bebdbd;
+    position: absolute;
+    top: -10px;
+    left: 220px;
+}
+.container .part_two {
+    position: absolute;
+    top: 0px;
+    left: 350px;
+}
+.container .part_two::after {
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #bebdbd;
+    position: absolute;
+    top: -10px;
+    left: 220px;
+}
+.container .part_three {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+}
+.container .part_three::after {
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #bebdbd;
+    position: absolute;
+    top: -10px;
+    left: 220px;
+}
+.container .part_four {
+    position: absolute;
+    top: 0px;
+    left: 850px;
+}
+.container .part_four::after {
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #bebdbd;
+    position: absolute;
+    top: -10px;
+    left: 220px;
+}
+.container .part_five {
+    position: absolute;
+    top: 0px;
+    left: 1100px;
+}
+.container .part_five::after {
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #bebdbd;
+    position: absolute;
+    top: -10px;
+    left: 220px;
+}
+.part_one,
+.part_two,
+.part_three,
+.part_four,
+.part_five {
+    height: 100px;
+}
+.part_one .icon-one img:first-child,
+.part_two .icon-two img:first-child,
+.part_three .icon-three img:first-child,
+.part_four .icon-four img:first-child,
+.part_five .icon-five img:first-child {
+    visibility: visible;
+    z-index: -1;
+    transition: 0.5s;
+}
+.part_one .icon-one img:last-child,
+.part_two .icon-two img:last-child,
+.part_three .icon-three img:last-child,
+.part_four .icon-four img:last-child,
+.part_five .icon-five img:last-child {
+    position: absolute;
+    left: 75px;
+    top: 50px;
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.5s;
+}
+.part_one .info,
+.part_two .info,
+.part_three .info,
+.part_four .info,
+.part_five .info {
+    width: 200px;
+    height: 42px;
+    background-color: black;
+}
+.part_one .info p:last-child,
+.part_two .info p:last-child,
+.part_three .info p:last-child,
+.part_four .info p:last-child,
+.part_five .info p:last-child{
+    color: #bebdbd;
+}
+.part_one:hover .icon-one img:last-child,
+.part_two:hover .icon-two img:last-child,
+.part_three:hover .icon-three img:last-child,
+.part_four:hover .icon-four img:last-child,
+.part_five:hover .icon-five img:last-child {
+    top: -7px;
+    visibility: visible;
+}
+.part_one:hover .icon-one img:first-child,
+.part_two:hover .icon-two img:first-child,
+.part_three:hover .icon-three img:first-child,
+.part_four:hover .icon-four img:first-child,
+.part_five:hover .icon-five img:first-child {
+    transform: translateY(-60px);
+    visibility: hidden;
+}
+.category_three .container::after {
+    content: "";
+    left: 100px;
+    top: -65px;
+    position: absolute;
+    background-color: black;
+    width: 1300px;
+    height: 50px;
+}
+.category_three .container::before {
+    content: "";
+    left: 80px;
+    top: 155px;
+    position: absolute;
+    background-color: #bebdbd;
+    width: 1300px;
+    height: 1px;
+    z-index: 3;
+}
+/* End of Third Part  */
+
+/* End of Section One  */
