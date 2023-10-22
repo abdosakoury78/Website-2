@@ -512,3 +512,53 @@ body {
 /* End of Third Part  */
 
 /* End of Section One  */
+
+/* Section Two  */
+.two .content {
+    height: 400px;
+}
+.content .topic {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.content .topic p {
+    color: white;
+    margin-right: 60px;
+    position: relative;
+    cursor: pointer;
+}
+.content .topic p::after {
+    content: "";
+    background-color: #fca311;
+    visibility: hidden;
+    width: 0px;
+    height: 1px;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    transition: 0.5s;
+}
+.content .topic p:hover::after {
+    visibility: visible;
+    width: 70px;
+}
+.shoes {
+    display: flex;
+    color: white;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.shoes .product_one .product-price {
+    margin-top: 20px;
+}
+.shoes .product_one .product-price i {
+    color: #fca311;
+    margin-bottom: 10px;
+}
+.shoes .product_one .product-price p:last-of-type {
+    margin: 5px 0px 20px 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
