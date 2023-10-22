@@ -419,15 +419,6 @@ body {
     top: 0px;
     left: 1100px;
 }
-.container .part_five::after {
-    content: "";
-    width: 1px;
-    height: 100px;
-    background-color: #bebdbd;
-    position: absolute;
-    top: -10px;
-    left: 220px;
-}
 .part_one,
 .part_two,
 .part_three,
@@ -674,7 +665,7 @@ body {
         flex-direction: column;
     }
     .one .content {
-        margin-top: 80px;
+        margin-top: 100px;
     }
     .one .content .category div:first-child {
         display: none;
